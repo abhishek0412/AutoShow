@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" parallel="tests" thread-count="2" >
+  <listeners>
+        <listener class-name="Listeners.TestListener"/>
+        <listener class-name="Listeners.AnnotationTransformer"/>
+    </listeners>
+  
+  <test name="Parallel_Test_1">
+    <classes>
+      <class name="Automation2018.AutoShow.LearnTest"/>  
+         
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Parallel_Test_2">
+    <classes>
+      <class name="Automation2018.AutoShow.AppTest"/>     
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

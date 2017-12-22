@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 2.118 s <<< FAILURE! - in TestSuite
+beforeTest(Automation2018.AutoShow.AppTest)  Time elapsed: 0.801 s  <<< FAILURE!
+java.lang.NullPointerException
+
+beforeTest(Automation2018.AutoShow.LearnTest)  Time elapsed: 0.802 s  <<< FAILURE!
+java.lang.NullPointerException
+

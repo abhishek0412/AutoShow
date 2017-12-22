@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Test]" parallel="tests">
+  <listeners>
+    <listener class-name="Listeners.TestListener"/>
+    <listener class-name="Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Parallel_Test_2(failed)" parallel="tests">
+    <classes>
+      <class name="Automation2018.AutoShow.LearnTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Automation2018.AutoShow.LearnTest -->
+      <class name="Automation2018.AutoShow.AppTest">
+        <methods>
+          <include name="test2"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Automation2018.AutoShow.AppTest -->
+    </classes>
+  </test> <!-- Parallel_Test_2(failed) -->
+  <test name="Parallel_Test_1(failed)" parallel="tests">
+    <classes>
+      <class name="Automation2018.AutoShow.LearnTest">
+        <methods>
+          <include name="test1"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Automation2018.AutoShow.LearnTest -->
+      <class name="Automation2018.AutoShow.AppTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Automation2018.AutoShow.AppTest -->
+    </classes>
+  </test> <!-- Parallel_Test_1(failed) -->
+</suite> <!-- Failed suite [Parallel Test] -->

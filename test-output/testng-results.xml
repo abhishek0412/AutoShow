@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel Test" duration-ms="25320" started-at="2017-12-22T18:13:36Z" finished-at="2017-12-22T18:14:01Z">
+    <groups>
+    </groups>
+    <test name="Parallel_Test_1" duration-ms="19486" started-at="2017-12-22T18:13:36Z" finished-at="2017-12-22T18:13:55Z">
+      <class name="Automation2018.AutoShow.LearnTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Automation2018.AutoShow.LearnTest@793f29ff]" name="beforeTest" is-config="true" duration-ms="12641" started-at="2017-12-22T23:43:36Z" finished-at="2017-12-22T23:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Automation2018.AutoShow.LearnTest@793f29ff]" name="test1" duration-ms="5848" started-at="2017-12-22T23:43:49Z" finished-at="2017-12-22T23:43:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Automation2018.AutoShow.LearnTest@793f29ff]" name="afterTest" is-config="true" duration-ms="963" started-at="2017-12-22T23:43:54Z" finished-at="2017-12-22T23:43:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Automation2018.AutoShow.LearnTest -->
+    </test> <!-- Parallel_Test_1 -->
+    <test name="Parallel_Test_2" duration-ms="25316" started-at="2017-12-22T18:13:36Z" finished-at="2017-12-22T18:14:01Z">
+      <class name="Automation2018.AutoShow.AppTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Automation2018.AutoShow.AppTest@17f9d882]" name="beforeTest" is-config="true" duration-ms="20721" started-at="2017-12-22T23:43:36Z" finished-at="2017-12-22T23:43:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:Automation2018.AutoShow.AppTest@17f9d882]" name="test2" duration-ms="3817" started-at="2017-12-22T23:43:57Z" finished-at="2017-12-22T23:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Automation2018.AutoShow.AppTest@17f9d882]" name="afterTest" is-config="true" duration-ms="765" started-at="2017-12-22T23:44:00Z" finished-at="2017-12-22T23:44:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Automation2018.AutoShow.AppTest -->
+    </test> <!-- Parallel_Test_2 -->
+  </suite> <!-- Parallel Test -->
+</testng-results>

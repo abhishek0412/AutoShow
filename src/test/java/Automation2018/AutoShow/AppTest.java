@@ -1,38 +1,33 @@
 package Automation2018.AutoShow;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import Automation2018.AutoShow.Pages.LoginPage;
+import ExtentReports.ExtentTestManager;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+public class AppTest extends BaseTest
+	{	  
+		
+		@Test
+		public void test2() throws InterruptedException
+		{
+			ExtentTestManager.getTest().setDescription("Valid Login Scenario with username and wrong password.AppTest");
+	    	
+				LoginPage lp = new LoginPage(driver);
+				lp.setUserName("abhishek.choudharry@gmail.com");
+				lp.setPassword("abc2017#");
+				lp.ClickLogin();
+				Assert.assertEquals(lp.VerifyLogin(), true, "Page not visbile");
+				
+	    	
+	    	
+		}
+	}
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-}
+	
+
+
