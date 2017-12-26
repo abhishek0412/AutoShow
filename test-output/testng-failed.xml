@@ -9,12 +9,14 @@
     <classes>
       <class name="Automation2018.AutoShow.LearnTest">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- Automation2018.AutoShow.LearnTest -->
       <class name="Automation2018.AutoShow.AppTest">
         <methods>
           <include name="test2"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- Automation2018.AutoShow.AppTest -->
@@ -24,12 +26,14 @@
     <classes>
       <class name="Automation2018.AutoShow.LearnTest">
         <methods>
+          <include name="afterTest"/>
           <include name="test1"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- Automation2018.AutoShow.LearnTest -->
       <class name="Automation2018.AutoShow.AppTest">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- Automation2018.AutoShow.AppTest -->
